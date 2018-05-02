@@ -38,7 +38,7 @@ import (
 
 func main() {
 
-	r := gin.Default()
+    r := gin.Default()
     r.Use(ginzerolog.Logger())
 
     r.GET("/", func(c *gin.Context) {

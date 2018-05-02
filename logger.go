@@ -8,7 +8,6 @@ import (
 	"github.com/rs/zerolog"
 )
 
-
 //Logger function is gin middleware to use zerolog
 func Logger() gin.HandlerFunc {
 	return LoggerWithWriter(gin.DefaultWriter)
