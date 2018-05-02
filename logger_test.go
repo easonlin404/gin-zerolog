@@ -16,6 +16,9 @@ func init() {
 }
 
 func TestLogger(t *testing.T) {
+	assert.NotNil(t, Logger())
+}
+func TestLoggerWithWriter(t *testing.T) {
 	buffer := new(bytes.Buffer)
 	router := gin.New()
 	router.Use(LoggerWithWriter(buffer))
